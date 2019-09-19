@@ -6,7 +6,7 @@ Could be used both int .Net Framework and .Net Core applications.
 
 Configuration example:
 
-```
+```xml
 <targets>
     <target xsi:type="SNS"
         name="SnsTarget"
