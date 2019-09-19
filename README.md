@@ -6,7 +6,7 @@ License: [MIT](https://raw.githubusercontent.com/RRomaNN/nlog-aws-sns-target/mas
 
 Nuget: [Latest version](https://www.nuget.org/packages/NLog.Targets.AWS.SNS)
 
-Could be used both int .Net Framework and .Net Core applications.
+Could be used both in .Net Framework and .Net Core applications.
 
 Configuration example:
 
@@ -19,7 +19,8 @@ Configuration example:
         accessKey="***"
         secretKey="***"
         format="json"
-        subject="Log message subject" />
+        subject="Log message subject"
+        layout="${message}"/>
 </tatrgets>
 <rules>
     <logger name="sns" minlevel="Info" writeTo="SnsTarget" final="true" />
@@ -35,7 +36,7 @@ Configuration example:
 | secretKey  | Secret key for BasicAWSCredentials | No |
 | format  | "plainText" (default) or "json" | No |
 | subject | Subject for SNS message | No |
-| layout | string layout for "plainText" format | No |
+| layout | layout for the "message" property | No |
 
 Simple usage example:
 
@@ -43,3 +44,5 @@ Simple usage example:
 var snsLogger = LogManager.GetLogger("sns");
 snsLogger.Info("Hello world!");
 ```
+
+!This is the draft version of documentation!
