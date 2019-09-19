@@ -63,7 +63,7 @@ namespace NLog.Targets.SNS
 		{
 			logEvent.Properties["logLevel"] = logEvent.Level;
 			logEvent.Properties["loggerName"] = logEvent.LoggerName;
-			logEvent.Properties["message"] = logEvent.Message;
+			logEvent.Properties["message"] = Layout.Render(logEvent);
 
 			return JsonConvert.SerializeObject(logEvent.Properties);
 		}

@@ -2,9 +2,21 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
+        <PackageId>NLog.Targets.AWS.SNS</PackageId>
+        <Authors>Roman Pirogov</Authors>
+        <Company>none</Company>
+        <Product />
+        <Description>AWS SNS target for NLog (.Net standard 2.0)</Description>
+        <Copyright>Roman Pirogov (c) 2019</Copyright>
+        <PackageLicenseUrl>https://github.com/RRomaNN/nlog-aws-sns-target/blob/master/LICENSE</PackageLicenseUrl>
+        <PackageProjectUrl>https://github.com/RRomaNN/nlog-aws-sns-target/</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/RRomaNN/nlog-aws-sns-target/</RepositoryUrl>
+        <RepositoryType>Public</RepositoryType>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="AWSSDK.Core" Version="3.3.103.40" />
       <PackageReference Include="AWSSDK.SimpleNotificationService" Version="3.3.101.65" />
       <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
       <PackageReference Include="NLog" Version="4.6.7" />
