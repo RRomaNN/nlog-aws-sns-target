@@ -1,9 +1,10 @@
 # AWS SNS Target for NLog
 
 Target Framework: .Net Standard 2.0
+
 License: [MIT](https://raw.githubusercontent.com/RRomaNN/nlog-aws-sns-target/master/LICENSE).
 
-[![Version]](https://www.nuget.org/packages/NLog.Targets.AWS.SNS/)
+Nuget: [Latest version](https://www.nuget.org/packages/NLog.Targets.AWS.SNS)
 
 Could be used both int .Net Framework and .Net Core applications.
 
