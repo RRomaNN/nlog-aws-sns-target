@@ -23,7 +23,7 @@ Configuration example:
         layout="${message}"/>
 </tatrgets>
 <rules>
-    <logger name="sns" minlevel="Info" writeTo="SnsTarget" final="true" />
+    <logger name="sns" minlevel="Info" writeTo="SnsTarget" />
 </rules>
 ```
 
@@ -44,5 +44,7 @@ Simple usage example:
 var snsLogger = LogManager.GetLogger("sns");
 snsLogger.Info("Hello world!");
 ```
+
+Inspired by https://github.com/Takaloy/NLog.Targets.SNS 
 
 !This is the draft version of documentation!
